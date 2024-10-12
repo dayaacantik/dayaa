@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes for Daya</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffebcd; /* Warna lebih cerah */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #e74c3c; /* Warna judul lebih cerah */
+            text-align: center;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1::before {
+            content: "🎂"; /* Ikon kue ulang tahun sebelum teks */
+            font-size: 2em;
+            margin-right: 10px;
+        }
+
+        h1::after {
+            content: "🎉"; /* Ikon konfeti setelah teks */
+            font-size: 2em;
+            margin-left: 10px;
+        }
+
+        .message {
+            background-color: #fafafa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            color: #2c3e50; /* Warna teks pesan */
+        }
+
+        .message p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Styling untuk gambar utama */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 60%; /* Foto lebih kecil */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambah bayangan pada gambar */
+        }
+
+        /* Galeri tambahan untuk 3 foto */
+        .extra-photos {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .extra-photos img {
+            width: 15%; /* Ukuran lebih kecil untuk masing-masing foto 1, 2, 3 */
+            border-radius: 10px;
+            box-shadow: none; /* Menghapus bayangan */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 16px;
+            color: #888;
+        }
+
+        .audio-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .audio-container button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .audio-container button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Happy Birthday, Cantik!</h1>
+
+        <!-- Tombol Play Musik -->
+        <div class="audio-container">
+            <button onclick="playAudio()">Play Birthday Song 🎶</button>
+            <audio id="birthdaySong">
+                <source src="y2mate.com - Waking Up Together With You.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Kalimat 1 -->
+        <div class="message">
+            <p>Hari ini adalah hari spesial bagimu. Aku tahu, dari sekian banyak orang yang mengucapkan selamat ulang tahun untukmu, aku ingin menjadi salah satu diantaranya.</p>
+        </div>
+
+        <!-- Galeri 3 Foto Tambahan -->
+        <div class="extra-photos">
+            <img src="Balloons-Free-PNG-Image.png" alt="Foto 1">
+            <img src="Balloons-Free-PNG-Image.png" alt="Foto 2">
+            <img src="Balloons-Free-PNG-Image.png" alt="Foto 3">
+        </div>
+
+        <!-- Kalimat 2 -->
+        <div class="message">
+            <p>Selamat ulang tahun, buat orang yang ingin aku bersama selamanya. Di hari spesialmu ini, aku ingin ngucapin terima kasih sebesar-besarnya. Terima kasih sudah selalu ada di sampingku, baik di saat suka maupun duka. Kamu selalu jadi penopangku, tempat aku bersandar ketika lelah, dan orang yang selalu mendukungku tanpa henti. Kehadiranmu membuat hidupku jauh lebih berwarna dan berarti. Aku sangat bersyukur bisa memiliki kamu di hidupku. Semoga ulang tahunmu penuh kebahagiaan dan cinta, sama seperti yang selalu kamu berikan padaku. Pada malam yang indah ini, izinkan aku mengucapkan selamat ulang tahun untukmu.</p>
+        </div>
+
+        <!-- Galeri Foto (Foto Utama) -->
+        <div class="gallery">
+            <img src="dayyyy.jpeg" alt="Foto Ulang Tahun">
+        </div>
+
+        <!-- Kalimat Penutup -->
+        <div class="message">
+            <p>Maaf tidak ku ucapkan secara langsung di depanmu, tidak juga kuberi kalimat-kalimat indah, cuma tiga kata saja "selamat ulang tahun" iya, itu saja. Hanya kutuliskan dengan kalimat sederhana dengan perasaan yang luar biasa. Tapi dibalik kalimat itu, ada harapan dan doa terbaik untukmu. Selamat ulang tahun, semoga hari ini kau menjadi orang paling bahagia di dunia.</p>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Birthday Wishes
+    </footer>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("birthdaySong");
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>
